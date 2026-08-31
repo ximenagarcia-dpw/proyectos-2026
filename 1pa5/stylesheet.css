@@ -1,0 +1,124 @@
+@property --arena{
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #F4EDE4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+   background-color: var(--arena);
+   padding: 30px;
+   text-align: center;
+}
+
+.navbar-item{
+    color: black;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.navbar-item:hover {
+    color:chocolate;
+    font-weight: bold;
+}
+
+header{
+    background-image:  url("cafesitox.jpg");
+    background-size: cover;
+    background-position: center;
+    color:var(--arena);
+}
+
+h1{
+    color: rgb(239, 231, 229);
+}
+
+header>div {
+    padding: 300px 300px 300px 100px;
+
+}
+
+.button {
+    padding: 10px;
+    background-color: chocolate;
+    color: var(--arena);
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#section1 {
+    background-color: bisque;
+    text-align: left;
+}
+
+#img-cafe {
+    height: 550px;
+}
+
+section, footer {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 80px;
+    color: chocolate;
+}
+
+#section1 p {
+    width: 50%;
+}
+
+#sct1-text {
+    padding-left: 100px;
+}
+
+#section2 {
+    text-align: center;
+}
+
+#section2 table {
+    margin:auto;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+#section2 td,th {
+    padding: 10px;
+}
+
+#section2 th{
+    background-color: chocolate;
+    color: beige;
+}
+
+#section2 td{
+    border-bottom: 1px solid chocolate;
+}
+
+footer {
+    background-color: chocolate;
+    color: beige;
+}
+
+footer table{
+    width: 100%;
+}
+
+#contacto {
+    text-align: right;
+}
+
+
+        
