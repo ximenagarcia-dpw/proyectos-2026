@@ -1,0 +1,165 @@
+@property --color1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(239, 196, 202);
+}
+
+@property --color2 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rgb(255, 248, 245);
+}
+
+body {
+    font-family: serif;
+    margin: 0;
+    background-color: rgb(249, 232, 232);
+    color: rgb(107, 80, 80);
+}
+
+header {
+    background-color: var(--color2);
+    color: rgb(169, 104, 104);
+    border-bottom: solid 2px rgb(239, 196, 202);
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(169, 104, 104);
+}
+
+h2 {
+    color: rgb(169, 104, 104);
+}
+
+h3 {
+    color: rgb(169, 104, 104);
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav a {
+    color: rgb(169, 104, 104);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(217, 154, 154);
+}
+
+section {
+    padding: 50px;
+}
+
+
+/* INICIO */
+
+#inicio {
+    background-color: var(--color1);
+    text-align: center;
+    padding: 80px 40px;
+}
+
+#inicio h2 {
+    font-size: 40px;
+}
+
+#inicio p {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+
+#nosotros {
+    background-color: var(--color2);
+    text-align: center;
+}
+
+#nosotros p {
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+
+/* CLASES */
+
+#clases {
+    background-color: rgb(249, 232, 232);
+}
+
+#clases h2 {
+    text-align: center;
+}
+
+#clases article {
+    margin: 30px;
+}
+
+#clases article p {
+    max-width: 800px;
+}
+
+
+
+#beneficios {
+    background-color: rgb(239, 196, 202);
+}
+
+#beneficios li {
+    margin: 10px;
+}
+
+
+#galeria {
+    background-color: var(--color2);
+    text-align: center;
+}
+
+#galeria img {
+    width: 45%;
+    margin: 10px;
+}
+
+
+
+#contacto {
+    background-color: rgb(239, 196, 202);
+    text-align: center;
+}
+
+#contacto p {
+    max-width: 650px;
+    margin: auto;
+}
+
+
+
+footer {
+    background-color: rgb(169, 104, 104);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
