@@ -1,0 +1,49 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+#contenedor{
+    border: 2px solid rgb(230, 178, 65);
+    background-color: bisque;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+section{
+    margin: 40px;
+}
+
+.caja{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.caja1{
+    background-color: cornflowerblue;
+    text-align: center;
+    font-weight: bold;
+    position:fixed;
+    top: 50px;
+    left: 150px;
+}
+
+.caja2{
+    background-color: rgb(199, 212, 238);
+    text-align: center;
+    position: relative;
+   left: 140px;
+   bottom: 140px;
+}
+
+.caja3{
+    background-color: rgb(209, 232, 249);
+    text-align: center;
+    position:relative;
+    bottom: 40px;
+    left: 50px;
+}
+
