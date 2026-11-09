@@ -132,6 +132,14 @@ em {
     transform: translateY(-12px) scale(1.04);
 }
 
+.croissants .izquierda {
+    transform: rotate(-4deg);
+}
+
+.croissants .derecha {
+    transform: scaleX(-1) rotate(-4deg);
+}
+
 #nosotros {
     background-color: #F5EBDD;
     display: flex;
@@ -400,4 +408,57 @@ footer h2 em {
 footer small {
     opacity: 0.7;
     font-size: 12px;
+}
+
+@media (max-width: 800px) {
+
+    #nav {
+        padding: 16px 20px;
+    }
+
+    .menu a {
+        margin-left: 12px;
+        font-size: 12px;
+    }
+
+    #inicio h1 {
+        font-size: 56px;
+    }
+
+    #nosotros, #contacto {
+        flex-direction: column;
+    }
+
+    #nosotros {
+        padding: 80px 30px;
+        gap: 50px;
+    }
+
+    .foto-panes, .texto-esencia, .texto-contacto, .foto-caja {
+        width: 100%;
+    }
+
+    .texto-contacto {
+        padding: 60px 30px;
+    }
+
+    .foto-caja {
+        min-height: 320px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagenes-magia {
+        grid-template-columns: 1fr;
+    }
+
+    #productos, #magia {
+        padding: 60px 20px;
+    }
+
+    .texto-esencia h2, .texto-contacto h2, #magia h2, footer h2 {
+        font-size: 38px;
+    }
 }
