@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", Arial, sans-serif;
+    margin: 0;
+    background-color: #FFF9F0;
+    color: #493126;
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.05;
+}
+
+em {
+    text-transform: none;
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+    color: #FFF9F0;
+}
+
+.logo {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+    border: 1.5px solid #FFF9F0;
+    border-radius: 50px;
+    padding: 0 16px;
+}
+
+.menu a {
+    margin-left: 30px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #E9B8BE;
+}
+
+#inicio {
+    background-color: #A8171B;
+    color: #FFF9F0;
+    text-align: center;
+    padding: 110px 40px 70px 40px;    
+    overflow: hidden;
+}
+
+#inicio h1 {
+    font-size: 130px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+#inicio h1 em {
+    color: #E9B8BE;
+}
+
+#inicio p {
+    width: 520px;
+    max-width: 100%;
+    margin: 20px auto 0 auto;
+    font-size: 14px;
+}
+.titulo-grande {
+    position: relative;
+}
+
+.titulo-grande img {
+    position: absolute;
+    top: -40px;
+}
+
+.pan {
+    width: 12%;
+    left: 14%;
+    transform: rotate(-10deg);
+}
+
+.croissant-borroso {
+    width: 15%;
+    right: 10%;
+    filter: blur(3px);
+    transform: rotate(8deg);
+}
+
+.croissants {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 30px -20px -30px -20px;
+}
+
+.croissants img {
+    width: 34%;
+    filter: drop-shadow(0 18px 18px rgba(0, 0, 0, 0.35));
+    transition: transform 0.5s;
+}
+
+.croissants img:hover {
+    transform: translateY(-12px) scale(1.04);
+}
+
+.croissants .izquierda {
+    transform: rotate(-4deg);
+}
+
+.croissants .derecha {
+    transform: scaleX(-1) rotate(-4deg);
+}
+
+#nosotros {
+    background-color: #F5EBDD;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 110px 80px;
+}
+
+.foto-panes {
+    position: relative;
+    width: 55%;
+}
+
+.panes {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 20px 40px rgba(73, 49, 38, 0.2);
+}
+
+.dibujo1, .dibujo2 {
+    position: absolute;
+    fill: none;
+    stroke: #FFF9F0;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.dibujo1 {
+    width: 34%;
+    top: -40px;
+    left: -30px;
+    transform: rotate(-12deg);
+}
+
+.dibujo2 {
+    width: 20%;
+    bottom: -30px;
+    right: 30px;
+}
+
+.texto-esencia {
+    width: 45%;
+}
+
+.texto-esencia h2 {
+    font-size: 55px;
+    color: #A8171B;
+    margin-bottom: 20px;
+}
+
+.texto-esencia p {
+    font-size: 14px;
+    max-width: 380px;
+}
+
+#productos {
+    padding: 90px 60px;
+}
+
+.titulo-linea {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.titulo-linea h2 {
+    font-size: 34px;
+    color: #A8171B;
+}
+
+.titulo-linea hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #A8171B;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+}
+
+.tarjeta {
+    text-align: center;
+    transition: transform 0.4s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.foto {
+    background-color: #F5EBDD;
+    border-radius: 22px;
+    overflow: hidden;
+    height: 320px;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s;
+}
+
+.tarjeta:hover .foto img {
+    transform: scale(1.07);
+}
+
+.etiqueta {
+    display: inline-block;
+    margin: 16px 0 8px 0;
+    padding: 2px 18px;
+    border: 1.5px solid #A8171B;
+    border-radius: 50px;
+    color: #A8171B;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tarjeta:hover .etiqueta {
+    background-color: #A8171B;
+    color: #FFF9F0;
+}
+
+.tarjeta p {
+    font-size: 13px;
+    margin: 0 auto;
+    max-width: 200px;
+}
+#magia {
+    background-color: #A8171B;
+    padding: 90px 60px;
+}
+
+#magia h2 {
+    color: #FFF9F0;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.imagenes-magia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 44px;
+}
+
+.imagenes-magia img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+#contacto {
+    background-color: #F5EBDD;
+    display: flex;
+    align-items: stretch;
+}
+
+.texto-contacto {
+    width: 45%;
+    padding: 100px 60px 100px 80px;
+    align-self: center;
+}
+
+.texto-contacto h2 {
+    font-size: 55px;
+    color: #A8171B;
+}
+
+.texto-contacto p {
+    font-size: 14px;
+    max-width: 360px;
+    margin: 18px 0 28px 0;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 1.5px solid #A8171B;
+    border-radius: 50px;
+    color: #A8171B;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: #A8171B;
+    color: #FFF9F0;
+}
+
+.foto-caja {
+    position: relative;
+    width: 55%;
+    min-height: 450px;
+}
+
+.foto-caja img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 120px;
+}
+
+
+footer {
+    background-color: #A8171B;
+    color: #FFF9F0;
+    text-align: center;
+    padding: 70px 60px 30px 60px;
+}
+
+footer h2 {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+footer h2 em {
+    color: #E9B8BE;
+}
+
+.frase {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    margin: 6px 0 28px 0;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    font-size: 14px;
+}
+
+.enlaces a:hover {
+    color: #E9B8BE;
+}
+
+.redes {
+    margin: 20px 0 36px 0;
+}
+
+.redes a {
+    border: 1px solid #E9B8BE;
+    border-radius: 50px;
+    padding: 2px 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.redes a:hover {
+    background-color: #E9B8BE;
+    color: #A8171B;
+}
+
+footer small {
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+
+    #nav {
+        padding: 16px 20px;
+    }
+
+    .menu a {
+        margin-left: 12px;
+        font-size: 12px;
+    }
+
+    #inicio h1 {
+        font-size: 56px;
+    }
+
+    #nosotros, #contacto {
+        flex-direction: column;
+    }
+
+    #nosotros {
+        padding: 80px 30px;
+        gap: 50px;
+    }
+
+    .foto-panes, .texto-esencia, .texto-contacto, .foto-caja {
+        width: 100%;
+    }
+
+    .texto-contacto {
+        padding: 60px 30px;
+    }
+
+    .foto-caja {
+        min-height: 320px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagenes-magia {
+        grid-template-columns: 1fr;
+    }
+
+    #productos, #magia {
+        padding: 60px 20px;
+    }
+
+    .texto-esencia h2, .texto-contacto h2, #magia h2, footer h2 {
+        font-size: 38px;
+    }
+}

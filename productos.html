@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productos | Miga & Harina</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheetproductos.css">
+</head>
+
+<body>
+
+    <div id="nav">
+        <a href="index.html" class="logo">M&H</a>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="index.html#contacto">Contacto</a>
+        </div>
+    </div>
+
+    <section class="prod-hero">
+        <h1>Nuestros <em>productos</em></h1>
+        <p>Pan dulce, pan salado y repostería hechos cada día con ingredientes de calidad y mucho cariño. Desliza y encuentra tu antojo.</p>
+    </section>
+
+    <section class="prod-categorias">
+        <h2>Elige tu <em>categoría</em></h2>
+
+        <div class="prod-categorias-lista">
+
+            <a href="#carrusel" class="prod-cat">
+                <div class="prod-cat-foto">
+                    <img src="pan dulce.png" alt="Pan dulce">
+                </div>
+                <h3>Pan dulce</h3>
+                <p>Suave, esponjoso y con ese toque de azúcar.</p>
+            </a>
+
+            <a href="#carrusel" class="prod-cat">
+                <div class="prod-cat-foto">
+                    <img src="Pan salado.jpg" alt="Pan salado">
+                </div>
+                <h3>Pan salado</h3>
+                <p>Cortezas doradas y migas aireadas.</p>
+            </a>
+
+            <a href="#carrusel" class="prod-cat">
+                <div class="prod-cat-foto">
+                    <img src="Repostería.png"Repostería">
+                </div>
+                <h3>Repostería</h3>
+                <p>Hojaldres, galletas y pequeños antojos.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="prod-carrusel" id="carrusel">
+
+        <div class="prod-cabecera">
+            <h2>Recién horneados</h2>
+            <hr>
+            <div class="prod-flechas">
+                <button class="prod-flecha" id="anterior" aria-label="Anterior">&larr;</button>
+                <button class="prod-flecha" id="siguiente" aria-label="Siguiente">&rarr;</button>
+            </div>
+        </div>
+
+        <div class="prod-pista" id="pista">
+
+            <div class="prod-card">
+                <div class="prod-foto">
+                    <img src="croissantpan.jpg" alt="Croissant">
+                </div>
+                <div class="prod-texto">
+                    <span class="prod-categoria">Repostería</span>
+                    <h3>Croissant</h3>
+                    <p>Hojaldre de mantequilla, crujiente por fuera y tierno por dentro.</p>
+                    <p class="prod-precio">$45 MXN</p>
+                    <button class="prod-boton">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <div class="prod-foto">
+                    <img src="pan de chocolate.jpg" alt="Pan de chocolate">
+                </div>
+                <div class="prod-texto">
+                    <span class="prod-categoria">Pan dulce</span>
+                    <h3>Pan de chocolate</h3>
+                    <p>Dos barras de chocolate oscuro envueltas en mantequilla.</p>
+                    <p class="prod-precio">$40 MXN</p>
+                    <button class="prod-boton">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <div class="prod-foto">
+                    <img src="Rol de canela .png" alt="Rol de canela">
+                </div>
+                <div class="prod-texto">
+                    <span class="prod-categoria">Pan dulce</span>
+                    <h3>Rol de canela</h3>
+                    <p>Canela, azúcar morena y un glaseado que se derrite.</p>
+                    <p class="prod-precio">$55 MXN</p>
+                    <button class="prod-boton">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <div class="prod-foto">
+                    <img src="Baguette.png" alt="Baguette">
+                </div>
+                <div class="prod-texto">
+                    <span class="prod-categoria">Pan salado</span>
+                    <h3>Baguette</h3>
+                    <p>Corteza dorada y crujiente, miga suave por dentro.</p>
+                    <p class="prod-precio">$48 MXN</p>
+                    <button class="prod-boton">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <div class="prod-foto">
+                    <img src="Pan de masa madre.png" alt="Pan de masa madre">
+                </div>
+                <div class="prod-texto">
+                    <span class="prod-categoria">Pan salado</span>
+                    <h3>Pan de masa madre</h3>
+                    <p>Fermentación lenta para un sabor profundo y una miga aireada.</p>
+                    <p class="prod-precio">$95 MXN</p>
+                    <button class="prod-boton">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <div class="prod-foto">
+                    <img src="galletas.png" alt="Galletas">
+                </div>
+                <div class="prod-texto">
+                    <span class="prod-categoria">Repostería</span>
+                    <h3>Galletas</h3>
+                    <p>Crujientes por fuera, suaves por dentro y llenas de sabor.</p>
+                    <p class="prod-precio">$40 MXN</p>
+                    <button class="prod-boton">Add to cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="prod-carrito">Carrito: <span id="contador">0</span> piezas</p>
+
+    </section>
+
+    <section class="prod-franja">
+        <span>Hecho a mano</span>
+        <span>Horneado cada mañana</span>
+        <span>Ingredientes frescos</span>
+    </section>
+
+    <section class="prod-caja">
+        <div class="prod-caja-foto">
+            <img src="caja de panes.png" alt="Caja de panes">
+        </div>
+
+        <div class="prod-caja-texto">
+            <h2>Una caja para <em>compartir</em></h2>
+            <p>¿Una reunión, un regalo o un desayuno especial? Arma una caja con tus panes favoritos y resérvala con anticipación.</p>
+            <a href="index.html#contacto" class="boton">Reserva tu caja</a>
+        </div>
+    </section>
+
+    <section class="prod-pasos">
+        <h2>Cómo <em>pedir</em></h2>
+
+        <div class="prod-pasos-lista">
+
+            <div class="prod-paso">
+                <p class="prod-numero">01</p>
+                <h3>Elige</h3>
+                <p>Mira el menú y escoge tus panes favoritos.</p>
+            </div>
+
+            <div class="prod-paso">
+                <p class="prod-numero">02</p>
+                <h3>Reserva</h3>
+                <p>Avísanos con anticipación para tenerlo listo.</p>
+            </div>
+
+            <div class="prod-paso">
+                <p class="prod-numero">03</p>
+                <h3>Disfruta</h3>
+                <p>Pasa por tu pan recién horneado y compártelo.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="prod-faq">
+        <h2>Preguntas <em>frecuentes</em></h2>
+
+        <div class="prod-faq-lista">
+
+            <details>
+                <summary>¿A qué hora hornean?</summary>
+                <p>Horneamos de martes a domingo, desde las 7:00 a.m., hasta que se acabe el último pan.</p>
+            </details>
+
+            <details>
+                <summary>¿Puedo reservar mi pedido?</summary>
+                <p>Sí. Reserva con anticipación en la panadería y te lo dejamos listo.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo conservo mejor mi pan?</summary>
+                <p>Lo ideal es disfrutarlo el mismo día. Guárdalo en una bolsa de tela o papel, y caliéntalo unos minutos en el horno para revivir su corteza.</p>
+            </details>
+
+        </div>
+    </section>
+
+    <section class="prod-cierre">
+        <h2>¿Se te antojó <em>algo?</em></h2>
+        <p>Pasa por la panadería o reserva tu pedido con anticipación.</p>
+        <a href="index.html#contacto" class="boton">Visítanos</a>
+    </section>
+
+    <footer>
+        <h2>Miga <em>&</em> Harina</h2>
+        <p class="frase">Pan recién horneado, calor de hogar.</p>
+
+        <div class="enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="index.html#contacto">Contacto</a>
+        </div>
+
+        <div class="enlaces redes">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+        </div>
+
+        <small>© 2026 Miga & Harina</small>
+    </footer>
+
+    <script src="scriptproductos.js"></script>
+
+</body>
+</html>

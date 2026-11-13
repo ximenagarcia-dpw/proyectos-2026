@@ -1,0 +1,430 @@
+
+
+.nos-hero {
+    background-color: #A8171B;
+    color: #FFF9F0;
+    text-align: center;
+    padding: 150px 40px 0 40px;
+}
+
+.nos-etiqueta {
+    display: inline-block;
+    border: 1.5px solid #E9B8BE;
+    border-radius: 50px;
+    padding: 2px 20px;
+    margin-bottom: 20px;
+    color: #E9B8BE;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.nos-hero h1 {
+    font-size: 72px;
+    font-weight: 500;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.nos-hero h1 em {
+    color: #E9B8BE;
+}
+
+.nos-hero p {
+    width: 520px;
+    max-width: 100%;
+    margin: 22px auto 0 auto;
+    font-size: 14px;
+}
+
+.nos-hero-foto {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 50px auto -90px auto;
+}
+
+.nos-hero-foto img {
+    display: block;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 25px 50px rgba(73, 49, 38, 0.3);
+}
+
+
+.nos-historia {
+    background-color: #F5EBDD;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 190px 80px 100px 80px;
+}
+
+.nos-historia-foto {
+    width: 45%;
+}
+
+.nos-historia-foto img {
+    display: block;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 200px 200px 22px 22px;
+}
+
+.nos-historia-texto {
+    width: 55%;
+}
+
+.nos-historia-texto h2 {
+    font-size: 50px;
+    color: #A8171B;
+    margin-bottom: 20px;
+}
+
+.nos-historia-texto p {
+    font-size: 14px;
+    max-width: 440px;
+    margin: 0 0 16px 0;
+}
+
+.nos-quienes {
+    background-color: #FFF9F0;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 100px 80px;
+}
+
+.nos-quienes-texto {
+    width: 50%;
+}
+
+.nos-quienes-texto h2 {
+    font-size: 50px;
+    color: #A8171B;
+    margin-bottom: 20px;
+}
+
+.nos-quienes-texto p {
+    font-size: 14px;
+    max-width: 440px;
+    margin: 0 0 16px 0;
+}
+
+.nos-palabras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.nos-palabras span {
+    border: 1.5px solid #A8171B;
+    border-radius: 50px;
+    padding: 2px 20px;
+    color: #A8171B;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.nos-quienes-foto {
+    width: 50%;
+}
+
+.nos-quienes-foto img {
+    display: block;
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 20px 40px rgba(73, 49, 38, 0.2);
+}
+
+.nos-hacemos {
+    background-color: #A8171B;
+    color: #FFF9F0;
+    text-align: center;
+    padding: 100px 60px;
+}
+
+.nos-hacemos h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #FFF9F0;
+}
+
+.nos-hacemos h2 em {
+    color: #E9B8BE;
+}
+
+.nos-hacemos-intro {
+    max-width: 480px;
+    margin: 15px auto 0 auto;
+    font-size: 14px;
+}
+
+.nos-hacemos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: start;
+    max-width: 1050px;
+    margin: 60px auto 0 auto;
+}
+
+.nos-hacemos-item:nth-child(2) {
+    margin-top: 50px;
+}
+
+.nos-hacemos-item img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.nos-hacemos-item h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 30px;
+    margin: 18px 0 8px 0;
+}
+
+.nos-hacemos-item p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.nos-detras {
+    background-color: #F5EBDD;
+    padding: 100px 60px;
+}
+
+.nos-titulo-linea {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nos-titulo-linea h2 {
+    font-size: 45px;
+    color: #A8171B;
+}
+
+.nos-titulo-linea hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #A8171B;
+}
+
+.nos-detras-intro {
+    max-width: 1100px;
+    margin: 12px auto 45px auto;
+    font-size: 14px;
+}
+
+.nos-pasos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nos-paso img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.nos-numero {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-style: italic;
+    font-size: 34px;
+    color: #A8171B;
+    margin: 14px 0 0 0;
+}
+
+.nos-paso h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 26px;
+    color: #A8171B;
+    margin: 0 0 6px 0;
+}
+
+.nos-paso p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.nos-valores {
+    background-color: #FFF9F0;
+    text-align: center;
+    padding: 100px 60px;
+}
+
+.nos-valores h2 {
+    font-size: 45px;
+    color: #A8171B;
+}
+
+.nos-valores-lista {
+    display: flex;
+    max-width: 1000px;
+    margin: 60px auto 0 auto;
+}
+
+.nos-valor {
+    flex: 1;
+    padding: 10px 35px;
+}
+
+.nos-valor + .nos-valor {
+    border-left: 1px solid #A8171B;
+}
+
+.nos-valor h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 30px;
+    font-style: italic;
+    color: #A8171B;
+    margin: 0 0 10px 0;
+}
+
+.nos-valor p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.nos-cierre {
+    background-color: #F5EBDD;
+    text-align: center;
+    padding: 110px 40px;
+}
+
+.nos-cierre h2 {
+    font-size: 60px;
+    color: #A8171B;
+    max-width: 800px;
+    margin: 0 auto 35px auto;
+}
+
+.nos-boton {
+    display: inline-block;
+    padding: 12px 34px;
+    border: 1.5px solid #A8171B;
+    border-radius: 50px;
+    color: #A8171B;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nos-boton:hover {
+    background-color: #A8171B;
+    color: #FFF9F0;
+}
+
+@media (max-width: 800px) {
+
+    .nos-hero {
+        padding: 120px 24px 0 24px;
+    }
+
+    .nos-hero h1 {
+        font-size: 40px;
+    }
+
+    .nos-hero-foto {
+        margin-bottom: -50px;
+    }
+
+    .nos-hero-foto img {
+        height: 280px;
+    }
+
+    .nos-historia, .nos-quienes {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .nos-historia {
+        padding: 120px 24px 70px 24px;
+    }
+
+    .nos-quienes {
+        padding: 70px 24px;
+    }
+
+    .nos-historia-foto, .nos-historia-texto,
+    .nos-quienes-texto, .nos-quienes-foto {
+        width: 100%;
+    }
+
+    .nos-historia-foto img {
+        height: 380px;
+        border-radius: 150px 150px 22px 22px;
+    }
+
+    .nos-quienes-foto img {
+        height: 320px;
+    }
+
+    .nos-historia-texto h2, .nos-quienes-texto h2,
+    .nos-hacemos h2, .nos-titulo-linea h2, .nos-valores h2 {
+        font-size: 36px;
+    }
+
+    .nos-hacemos, .nos-detras, .nos-valores {
+        padding: 70px 24px;
+    }
+
+    .nos-hacemos-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .nos-hacemos-item:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .nos-hacemos-item img {
+        height: 300px;
+    }
+
+    .nos-pasos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nos-paso img {
+        height: 200px;
+    }
+
+    .nos-valores-lista {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .nos-valor {
+        padding: 25px 10px;
+    }
+
+    .nos-valor + .nos-valor {
+        border-left: none;
+        border-top: 1px solid #A8171B;
+    }
+
+    .nos-cierre {
+        padding: 80px 24px;
+    }
+
+    .nos-cierre h2 {
+        font-size: 38px;
+    }
+}
