@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedidos por encargo | Miga & Harina</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheetpedidos.css">
+</head>
+
+<body>
+
+    <div id="nav">
+        <a href="index.html" class="logo">M&H</a>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="pedidos.html">Pedidos</a>
+        </div>
+    </div>
+
+    <section class="ped-hero">
+        <h1>Pedidos <em>por encargo</em></h1>
+        <p>Para un regalo, un desayuno especial o una celebración: horneamos tu pedido fresco y lo dejamos listo para ti.</p>
+    </section>
+
+    <section class="ped-paquetes">
+        <h2>Elige tu <em>paquete</em></h2>
+
+        <div class="ped-paquetes-lista">
+
+            <div class="ped-paquete">
+                <img src="caja de panes.png" alt="Caja desayuno">
+                <div class="ped-paquete-texto">
+                    <span class="ped-etiqueta">Para 2 a 3 personas</span>
+                    <h3>Caja desayuno</h3>
+                    <p>6 piezas surtidas de pan dulce y repostería, ideales para una mañana tranquila.</p>
+                    <!-- Precios de ejemplo: cámbialos por los reales -->
+                    <p class="ped-precio">Desde $280 MXN</p>
+                    <a href="#reservar" class="ped-elegir" data-paquete="Caja desayuno">Elegir este paquete</a>
+                </div>
+            </div>
+
+            <div class="ped-paquete">
+                <img src="caja panes .png" alt="Caja para compartir">
+                <div class="ped-paquete-texto">
+                    <span class="ped-etiqueta">Para 5 a 6 personas</span>
+                    <h3>Caja para compartir</h3>
+                    <p>12 piezas a tu gusto, entre pan dulce, pan salado y galletas. Un regalo que siempre gusta.</p>
+                    <p class="ped-precio">Desde $520 MXN</p>
+                    <a href="#reservar" class="ped-elegir" data-paquete="Caja para compartir">Elegir este paquete</a>
+                </div>
+            </div>
+
+            <div class="ped-paquete">
+                <img src="pan eventos.jpg" alt="Mesa para evento">
+                <div class="ped-paquete-texto">
+                    <span class="ped-etiqueta">Para 15 personas o más</span>
+                    <h3>Mesa para evento</h3>
+                    <p>Pan fresco para cumpleaños, reuniones y celebraciones. Armamos el pedido contigo.</p>
+                    <p class="ped-precio">Cotización a tu medida</p>
+                    <a href="#reservar" class="ped-elegir" data-paquete="Mesa para evento">Elegir este paquete</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="ped-pasos">
+        <h2>Cómo <em>funciona</em></h2>
+
+        <div class="ped-pasos-lista">
+
+            <div class="ped-paso">
+                <p class="ped-numero">01</p>
+                <h3>Cuéntanos</h3>
+                <p>Elige tu paquete y llena el formulario con lo que necesitas.</p>
+            </div>
+
+            <div class="ped-paso">
+                <p class="ped-numero">02</p>
+                <h3>Confirmamos</h3>
+                <p>Te contactamos para afinar detalles y confirmar tu pedido.</p>
+            </div>
+
+            <div class="ped-paso">
+                <p class="ped-numero">03</p>
+                <h3>Recógelo</h3>
+                <p>Pasa por él el día acordado, recién horneado y listo para compartir.</p>
+            </div>
+
+        </div>
+    </section>
+
+        <section class="ped-reserva" id="reservar">
+
+        <h2>Haz tu <em>pedido</em></h2>
+        <p class="ped-intro">Te recomendamos pedir con al menos 3 días de anticipación.</p>
+
+        <form class="ped-formulario" action="mailto:hola@migayharina.com" method="post" enctype="text/plain">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Tu número">
+
+            <label for="paquete">Paquete que quieres</label>
+            <input type="text" id="paquete" name="paquete" placeholder="Caja desayuno, Caja para compartir o Mesa para evento">
+
+            <label for="fecha">Fecha para recogerlo</label>
+            <input type="text" id="fecha" name="fecha" placeholder="Por ejemplo: 20 de diciembre">
+
+            <label for="personas">Número de personas</label>
+            <input type="text" id="personas" name="personas" placeholder="Por ejemplo: 6">
+
+            <label for="mensaje">Detalles (opcional)</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Panes que prefieres, alguna nota especial..."></textarea>
+
+            <button type="submit" class="ped-boton">Enviar pedido</button>
+
+        </form>
+    </section>
+
+    <section class="ped-faq">
+        <h2>Preguntas <em>frecuentes</em></h2>
+
+        <div class="ped-faq-lista">
+
+            <details>
+                <summary>¿Con cuánta anticipación debo pedir?</summary>
+                <p>Lo ideal es con 3 días de anticipación. Para eventos grandes, mientras antes nos avises, mejor.</p>
+            </details>
+
+            <details>
+                <summary>¿Puedo cambiar los panes de mi caja?</summary>
+                <p>Claro. Cuéntanos tus favoritos en el formulario y armamos la caja a tu gusto.</p>
+            </details>
+
+            <details>
+                <summary>¿Cómo recojo mi pedido?</summary>
+                <p>Pasas por la panadería el día acordado. Lo tendremos fresco y listo para ti.</p>
+            </details>
+
+        </div>
+    </section>
+
+    <footer>
+        <h2>Miga <em>&</em> Harina</h2>
+        <p class="frase">Pan recién horneado, calor de hogar.</p>
+
+        <div class="enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="pedidos.html">Pedidos</a>
+        </div>
+
+        <div class="enlaces redes">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+        </div>
+
+        <small>© 2026 Miga & Harina</small>
+    </footer>
+
+    <script src="scriptpedidos.js"></script>
+
+</body>
+</html>
